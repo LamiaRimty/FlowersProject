@@ -16,3 +16,13 @@ const flower = new Flower({
 });
 
 //flower.save();
+Flower.deleteOne({ _id:"638f41d00b03cde038886a7f" },function(error){
+ 
+    if(error){
+      console.log(error);
+    }
+  
+    else{
+      console.log("Successfully deleted Flower in the document");
+    }
+  })
